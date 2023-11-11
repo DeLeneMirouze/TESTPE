@@ -14,7 +14,7 @@ resource "azurerm_private_endpoint" "pe" {
 }
 
 resource "azurerm_private_dns_a_record" "a_record" {
-  name                = lower(local.resourceName)
+  name                = "foo"
   resource_group_name = var.resource_group_name
   zone_name           = "privatelink.database.windows.net"
   ttl                 = 10
