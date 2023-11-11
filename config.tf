@@ -1,4 +1,4 @@
-provider "azurerm" {
+provider azurerm {
   tenant_id       = "396b38cc"
   subscription_id = "99c6c0c86"
 
@@ -8,7 +8,7 @@ provider "azurerm" {
   }
 }
 
-provider "azurerm" {
+provider azurerm {
   alias                      = "dns"
   skip_provider_registration = true
   features {}
