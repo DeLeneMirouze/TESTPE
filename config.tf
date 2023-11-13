@@ -1,7 +1,7 @@
 
 provider azurerm {
-  tenant_id       = "396b38cc"
-  subscription_id = "99c6c0c86"
+  tenant_id       = "852"
+  subscription_id = "789"
 
   skip_provider_registration = true
 
@@ -13,7 +13,7 @@ provider azurerm {
   alias                      = "dns"
   skip_provider_registration = true
   features {}
-  subscription_id = "58e415dc"
+  subscription_id = "456"
 }
 
 terraform {
