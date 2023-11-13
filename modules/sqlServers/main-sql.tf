@@ -16,7 +16,8 @@ module "privateLink_primary" {
   resource_group_name = var.resource_group_name
   target_resource_id  = azurerm_mssql_server.primary.id
   providers = {
-    azurerm = azurerm.dns
+    azurerm = azurerm
+    azurerm.dns = azurerm.dns
   }
 }
 
@@ -25,6 +26,7 @@ terraform {
     azurerm = {
       source                = "hashicorp/azurerm"
       version               = "=3.79.0"
+      configuration_aliases = [azurerm.dns]
     }
   }
 }
